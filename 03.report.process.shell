@@ -1,0 +1,50 @@
+ps aux | head
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.1  0.1 225452  9176 ?        Ss   08:59   0:09 /sbin/init splash
+root         2  0.0  0.0      0     0 ?        S    08:59   0:00 [kthreadd]
+root         3  0.0  0.0      0     0 ?        I<   08:59   0:00 [rcu_gp]
+root         4  0.0  0.0      0     0 ?        I<   08:59   0:00 [rcu_par_gp]
+root         6  0.0  0.0      0     0 ?        I<   08:59   0:00 [kworker/0:0H-kb]
+root         8  0.0  0.0      0     0 ?        I<   08:59   0:00 [mm_percpu_wq]
+root         9  0.0  0.0      0     0 ?        S    08:59   0:00 [ksoftirqd/0]
+root        10  0.2  0.0      0     0 ?        I    08:59   0:12 [rcu_sched]
+root        11  0.0  0.0      0     0 ?        S    08:59   0:00 [migration/0]
+
+------------------
+
+gnome-calculator
+
+------------------
+
+ps aux | grep gnome-calculator
+ ps aux | grep gnome-calculator
+kazutoh+ 13990  1.3  0.4 807672 37920 pts/0    Sl+  10:35   0:00 gnome-calculator
+
+-> PID: 13990
+
+------------------
+
+cat /proc/13990/status | head
+Name:	gnome-calculato
+Umask:	0022
+State:	S (sleeping)
+Tgid:	13990
+Ngid:	0
+Pid:	13990
+PPid:	13586
+TracerPid:	0
+Uid:	1000	1000	1000	1000
+Gid:	1000	1000	1000	1000
+
+------------------
+
+kill -s STOP 13990
+
+------------------
+
+kill -s CONT 13990
+
+------------------
+
+kill -s KILL 13990
+
