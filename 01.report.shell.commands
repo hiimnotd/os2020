@@ -1,0 +1,103 @@
+echo hello world 
+hello world
+
+------------------
+
+passwd
+Changing password for kazutohbt.
+(current) UNIX password: 
+Enter new UNIX password: 
+Retype new UNIX password: 
+passwd: password updated successfully
+
+------------------
+
+date
+Tue Jan 14 09:03:01 +07 2020
+
+------------------
+
+hostname
+4everyng
+
+------------------
+
+arch
+x86_64
+
+------------------
+
+uname -a
+Linux 4everyng 5.0.0-37-generic #40~18.04.1-Ubuntu SMP Thu Nov 14 12:06:39 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+
+------------------
+
+dmesg | head
+[    0.000000] microcode: microcode updated early to revision 0xd6, date = 2019-10-03
+[    0.000000] Linux version 5.0.0-37-generic (buildd@lcy01-amd64-023) (gcc version 7.4.0 (Ubuntu 7.4.0-1ubuntu1~18.04.1)) #40~18.04.1-Ubuntu SMP Thu Nov 14 12:06:39 UTC 2019 (Ubuntu 5.0.0-37.40~18.04.1-generic 5.0.21)
+[    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-5.0.0-37-generic root=UUID=67c67a40-6188-4441-81c3-74c4b3e7386e ro quiet splash vt.handoff=1
+[    0.000000] KERNEL supported cpus:
+[    0.000000]   Intel GenuineIntel
+[    0.000000]   AMD AuthenticAMD
+[    0.000000]   Hygon HygonGenuine
+[    0.000000]   Centaur CentaurHauls
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+
+------------------
+
+uptime
+09:06:23 up 7 min,  1 user,  load average: 0.52, 1.19, 0.78
+
+------------------
+
+who am i
+
+------------------
+
+whoami
+kazutohbt
+
+------------------
+
+who
+kazutohbt :0           2020-01-14 09:00 (:0)
+
+------------------
+
+id
+uid=1000(kazutohbt) gid=1000(kazutohbt) groups=1000(kazutohbt),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),116(lpadmin),126(sambashare)
+
+------------------
+
+last | head
+kazutohb :0           :0               Tue Jan 14 09:00   still logged in
+reboot   system boot  5.0.0-37-generic Tue Jan 14 08:59   still running
+kazutohb :0           :0               Tue Jan 14 08:33 - 08:57  (00:23)
+reboot   system boot  5.0.0-37-generic Tue Jan 14 08:32 - 08:58  (00:26)
+reboot   system boot  5.0.0-37-generic Tue Jan 14 15:29 - 08:31  (-6:58)
+kazutohb :0           :0               Mon Jan 13 21:35 - down   (-4:53)
+reboot   system boot  5.0.0-37-generic Mon Jan 13 21:34 - 16:42  (-4:52)
+kazutohb :0           :0               Sun Jan 12 23:16 - 23:37  (00:20)
+reboot   system boot  5.0.0-37-generic Mon Jan 13 06:15 - 23:37  (-6:38)
+kazutohb :0           :0               Sun Jan 12 21:07 - down   (00:57)
+
+------------------
+
+finger
+Login      Name           Tty      Idle  Login Time   Office     Office Phone
+kazutohbt  Nguyen Dzung  *:0             Jan 14 09:00 (:0)
+
+------------------
+
+w
+ 09:12:32 up 13 min,  1 user,  load average: 0.76, 1.00, 0.84
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+kazutohb :0       :0               09:00   ?xdm?   1:21   0.02s /usr/lib/gdm3/g
+
+
+
+
+
+
+
