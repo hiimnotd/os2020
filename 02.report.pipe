@@ -1,0 +1,49 @@
+ls | grep list
+filelist
+list
+list2
+	
+-> 3 files containing "list" in their names.
+
+------------------
+
+wc -l /etc/passwd
+41 /etc/passwd
+
+-> /etc/passwd has 41 lines.
+
+------------------
+
+free -m
+  total        used        free      shared  buff/cache   available
+Mem:           7761        1799        3245         577        2715        5083
+Swap:          2047           0        2047
+
+-> My machine has 7761MB of RAM.
+
+------------------
+
+cat /proc/cpuinfo | head
+aprocessor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 78
+model name	: Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz
+stepping	: 3
+microcode	: 0xd6
+cpu MHz		: 671.353
+cache size	: 3072 KB
+physical id	: 0
+
+-> My CPU has 4 logical core.
+
+------------------
+
+find ~/Pictures |grep -i jpg
+/home/kazutohbt/Pictures/shigatsu-wa-kimi-no-uso-episode-1-48.jpg
+/home/kazutohbt/Pictures/thumb-1920-668521.jpg
+
+-> There are 2 .jpg files in my photo directory.
+
+
+
